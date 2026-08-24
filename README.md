@@ -2,4 +2,4 @@
 Tech Journal for Champlain College SYS-255
 
 ### Lab Journal Quick Access
-* [[ Lab 01 | Environment Setup ]]
+* [[ Lab 01 | Environment Setup.md ]]
