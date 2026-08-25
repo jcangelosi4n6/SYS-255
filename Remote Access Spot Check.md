@@ -3,7 +3,7 @@ This assignment was just a simple check to make sure our cyber.local proxmox env
 
 ### How To Navigate the Environment
 You can reach the proxmox env by going to http://prox01.cyber.local and logging in with cyber.local creds.  
-If the user is not on the Champlain network, viewportal.champlain.edu can be used as a proxy to get onto the network remotely.
+If the user is not on the Champlain network, viewportal.champlain.edu can be used as a proxy to get onto the network remotely.</br>
 All 4 VMs are located on pve5, named in shorthand for what their purpose is.
 
 ### Snapshots
