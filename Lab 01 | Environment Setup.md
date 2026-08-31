@@ -1,5 +1,5 @@
 1. What is an upstream gateway vs gateway?
-### Lab 01 | Environment Setup.md
+# Lab 01 | Environment Setup.md
 To network all of our VMs together on Proxmox, we need to set up our environment and establish a connection.  
 
 ## Assigning Networks on fw01
@@ -99,3 +99,5 @@ To manually assign the IP address for wks01 the steps are as follows:
    * I was mostly unfamiliar with how DNS configuration works. Forwarding DNS queries upstream was not something I really had in my bag as of now but I’m glad I was able to successfully configure the systems.
 6. Meets the submission guidelines
 7. Tech Journal entry
+## Default Gateway Question
+A default gateway is where all traffic from a system that is destined for any location outside of its local network with be routed through. For example, when we where pinging champlain.edu, the request was being sent to our gateway first then out to the open internet to resolve the name into a usable IP.
