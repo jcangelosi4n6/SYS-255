@@ -36,11 +36,11 @@ The steps to assign the LAB interface are as follows:
 2. Select 2 to set the LAN interface
 3. Do not use DHCP
 4. Assign the IP
-  * *The IP we are using is 10.0.5.2 which is the same for every student*
+   * *The IP we are using is 10.0.5.2 which is the same for every student*
 5. Enter the subnet bit count
-  * In this case we are on 24
+   * In this case we are on 24
 6. There is no upstream gateway for LAN
-  * *We ARE the gateway for the LAN*
+   * *We ARE the gateway for the LAN*
 7. No DHCP6, IPv6, or DHCP
 8. Do not revert to http
 
