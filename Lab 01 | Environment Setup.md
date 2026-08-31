@@ -1,4 +1,3 @@
-1. What is an upstream gateway vs gateway?
 # Lab 01 | Environment Setup.md
 To network all of our VMs together on Proxmox, we need to set up our environment and establish a connection.  
 
