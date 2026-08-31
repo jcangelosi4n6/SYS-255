@@ -22,7 +22,7 @@ The steps to assign the WAN IP and GW are as follows:
 2. Select 1 to set the WAN interface
 3. Select no DHCP assignment
 4. Enter the class assigned WAN address from canvas
-   * *I am using 10.0.17.111 my WAN IP was not assigned on canvas*
+   * *I am using 10.0.17.111 as my WAN IP was not assigned on canvas*
 5. Enter the subnet bit count
    * In this case we are on 24
 6. Set the upstream gateway as 10.0.17.2
