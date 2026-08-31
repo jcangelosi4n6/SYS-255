@@ -22,9 +22,9 @@ The steps to assign the WAN IP and GW are as follows:
 2. Select 1 to set the WAN interface
 3. Select no DHCP assignment
 4. Enter the class assigned WAN address from canvas
-  * *I am using 10.0.17.111 my WAN IP was not assigned on canvas*
+   * *I am using 10.0.17.111 my WAN IP was not assigned on canvas*
 5. Enter the subnet bit count
-  * In this case we are on 24
+   * In this case we are on 24
 6. Set the upstream gateway as 10.0.17.2
 7. Set this as the default gateway
 8. Do not assign IPv6 it will not be used here
@@ -70,7 +70,7 @@ To manually assign the IP address for wks01 the steps are as follows:
 5. Double-Click on IPv4
 6. Click on the Use the "following IP address" option
 7. Enter the correct IP information
-  * Our IP is 10.0.5.100, Subnet 255.255.255.0, Default Gateway 10.0.5.2
+   * Our IP is 10.0.5.100, Subnet 255.255.255.0, Default Gateway 10.0.5.2
 8. Set The DNS server to the same address as the default gateway
 9. Click OK
 
