@@ -2,3 +2,5 @@ Log into dhcp01
 `cat /etc/ssh/sshd_conf`  
 Find the PermitRootLogin field  
 Remove the comment # and append "no" to the end  
+journalclt -u sshd | grep -i "failed"  
+last -f /var/log/btmp  
