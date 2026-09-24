@@ -22,3 +22,32 @@ Create a DSM Password
 Leave the error be, it does not apply to us since we are using it locally  
 NetBIOS is set to 'JAMES'  
 Now Login as DOMAIN ADMIN instead of local admin  
+
+## DNS
+The DNS address has now changed to 127.0.0.1, which is the loopback address. This address will point at itself. We should now make a DNS record on our server via the following:
+ * Server Manager > DNS > Right-Click on the server > DNS Manager
+ * Expand the Forward Lookup Zone for our domain
+ * Right click the domain and add an A record
+ * Input the hostname for fw01-james, and the IP: 10.0.5.2
+ * There will be an error creating ptr records
+### Reverse Zone
+We must create a new Reverse Zone to see all hosts on the 10.0.5.0/24 network  
+ * Select Primary
+ * To all DNS servers running on domain controllers in this domain: james.local
+ * IPv4
+ * NetID is 10.0.5
+ * Update the ptr records of ad01 and fw01
+
+## Creating Domain Users
+We need domain accounts to actually manage the way users interact with the machines, so we will use these in lieu of local users. To do this:  
+ * Go to the AD DS tab
+ * Right click on the domain
+   * Active Directory Users and Computers
+ * Find the Domain's user folder
+ * add a domain admin and add the adm suffix on the username to denote that it is admin.
+ * Set password and uncheck change password at logon
+ * Add the user to the 'Domain Admins' group
+ * Repeat the steps to create a regular user for my name w/o adding it to the adm group
+
+## Preparing wks01 to join james.local
+**ANYTIME YOU HAVE A NEW SYSTEM READY TO JOIN A DOMAIN IT MUST USE THE DOMAIN'S DNS SERVER**
