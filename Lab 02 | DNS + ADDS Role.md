@@ -50,4 +50,11 @@ We need domain accounts to actually manage the way users interact with the machi
  * Repeat the steps to create a regular user for my name w/o adding it to the adm group
 
 ## Preparing wks01 to join james.local
-**ANYTIME YOU HAVE A NEW SYSTEM READY TO JOIN A DOMAIN IT MUST USE THE DOMAIN'S DNS SERVER**
+**ANYTIME YOU HAVE A NEW SYSTEM READY TO JOIN A DOMAIN IT MUST USE THE DOMAIN'S DNS SERVER**  
+Use the following commands in powershell to change the DNS server on the adapter
+```
+Get-NetAdapter
+Set-DnsClientServerAddress -InterfaceAlias "Ethernet0" -ServerAddresses 10.0.5.5
+ipconfig /flushdns
+```
+
