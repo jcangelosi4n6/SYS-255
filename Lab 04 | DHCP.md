@@ -55,3 +55,18 @@ ipconfig /renew
 ipconfig /all
 ```
   * This manually sets the interface to use dhcp and then renew an IP from the server
+## Changing default lease time
+We are going to append the max-lease time to the config file from earlier. It will look like this:
+```
+subnet 10.0.5.0 netmask 255.255.255.0 {
+        options routers 10.0.5.2;
+        option subnet-mask 255.255.255.0;
+        option domain-name "james.local";
+        option domain-name-servers 10.0.5.5;
+        range 10.0.5.101 10.0.5.125;
+        default-lease-time 3600;
+        max-lease-time 14400
+}
+```
+ * The lease time will be global if set outside the subnet block
+ * max-lease-time is in seconds
