@@ -65,8 +65,11 @@ subnet 10.0.5.0 netmask 255.255.255.0 {
         option domain-name-servers 10.0.5.5;
         range 10.0.5.101 10.0.5.125;
         default-lease-time 3600;
-        max-lease-time 14400
+        max-lease-time 14400;
 }
 ```
  * The lease time will be global if set outside the subnet block
  * max-lease-time is in seconds
+Use the following command to make sure there are no syntax errors:
+`sudo dhcpd -t -cf /etc/dhcp/dhcpd.conf`  
+Now restart the service.
