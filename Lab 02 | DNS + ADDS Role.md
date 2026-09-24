@@ -55,7 +55,7 @@ We need domain accounts to actually manage the way users interact with the machi
 Use the following commands in powershell to change the DNS server on the adapter:
 ```
 Get-NetAdapter
-Set-DnsClientServerAddress -InterfaceAlias "Ethernet0" -ServerAddresses 10.0.5.5
+Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses 10.0.5.5
 ipconfig /flushdns
 ```  
   
