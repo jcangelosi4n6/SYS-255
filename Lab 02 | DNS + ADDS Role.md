@@ -51,10 +51,20 @@ We need domain accounts to actually manage the way users interact with the machi
 
 ## Preparing wks01 to join james.local
 **ANYTIME YOU HAVE A NEW SYSTEM READY TO JOIN A DOMAIN IT MUST USE THE DOMAIN'S DNS SERVER**  
-Use the following commands in powershell to change the DNS server on the adapter
+  
+Use the following commands in powershell to change the DNS server on the adapter:
 ```
 Get-NetAdapter
 Set-DnsClientServerAddress -InterfaceAlias "Ethernet0" -ServerAddresses 10.0.5.5
 ipconfig /flushdns
-```
-
+```  
+  
+## Domain Joining wks01
+First, change the hostname to wks01-james if it isn't already.
+ * Control Panel > System & Security > System > Rename this PC (Advanced)
+ * Click the 'Change...' option to add it to the domain
+ * Keep computer name the same
+ * Make wks a member of james.local
+ * Input the username and password of the domain admin
+ * Welcome to the domain!
+ * Restart to apply changes
