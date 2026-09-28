@@ -7,4 +7,4 @@ Tech Journal for Champlain College SYS-255
 * [Lab 02 | DNS + ADDS Role](Lab%2002%20|%20DNS%20+%20ADDS%20Role.md)
 * [Lab 03 | Linux](Lab%2003%20|%20Linux.md)
 * [Lab 04 | DHCP](Lab%2004%20|%20DHCP.md)
-* [Lab 05 ADDS | ](Lab%205%20|%20ADDS.md)
+* [Lab 05 | ADDS](Lab%2005%20%7C%20ADDS.md)
