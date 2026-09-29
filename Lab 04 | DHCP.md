@@ -7,7 +7,7 @@ We can use the following command to install the dhcp service:
 **Create a backup of the configuration file!**
 ```
 sudo -i
-cp /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.comf.bak
+cp /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.bak
 vi /etc/dhcp/dhcpd.conf
 ```
   * This allows us to edit the conf file and not worry is anything goes wrong
